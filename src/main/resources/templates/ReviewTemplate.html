@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css"></link>
+    <title th:text = "${reviewModel.name}"></title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <section>
+            <button>
+                <a th:href="@{/}">Home</a>
+            </button>
+        </section>
+    </nav>
+    <main>
+        <h2 th:text ="${reviewModel.name}"></h2>
+        <a th:href="${reviewModel.review}">Review</a>
+        <section>
+            <button>
+                <a th:href="@{/reviews}">Back</a>
+            </button>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; wecancodeit 2021</small>
+    </footer>
+</div>
+</body>
+</html>
