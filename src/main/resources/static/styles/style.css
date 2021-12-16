@@ -1,57 +1,108 @@
-* {
-   font-size: 30px;
-   font-style: courier;
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-body {
-  padding: 50px;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-h1{
-   font-size: 40px;
-}
-
-section {
-  padding: 50px 0;
-}
-
-img {
-  width: 50%
-  box-shadow: 5px 5px 5px 5px #000000;
-}
-
-.container {
+.homeContainer {
    background-color: #ccc;
    border-radius: 10px;
    height: 600px;
    margin: auto;
    max-width: 1000px;
    padding: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-table{
-  width: 60%;
+.home {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
 }
 
- tr, td {
-  border: 1px solid black;
-  margin: auto;
-  width: 60%;
+.home .title{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
 }
 
-tr:first-child{
+.home img {
+  width: 100%;
+  height: auto;
+}
+
+.home .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
   text-align: center;
 }
 
-td {
-  width: 50%;
+.reviewsContainer {
+   background-color: #ccc;
+   border-radius: 10px;
+   height: 600px;
+   margin: auto;
+   max-width: 1000px;
+   padding: 50px;
+   /* display: flex;
+   /* flex-direction: column;
+   justify-content: center;
+   align-items: center; */ */
 }
 
-footer {
-  padding: 20px;
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.reviewsList,.review,nav{
+  font-size: 14px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewsContainer .btn{
+  background-color: #555;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: aqua;
+}
+
+ul {
+  list-style-type: none;
+  padding-right: 4%;
+}
+
+.review img{
+  border-radius: 50%;
+  height: auto;
+  margin-top: 20px;
+  width: 20%;
+}
+
+footer{
+    padding-top: 5px;
+    text-align: center;
 }

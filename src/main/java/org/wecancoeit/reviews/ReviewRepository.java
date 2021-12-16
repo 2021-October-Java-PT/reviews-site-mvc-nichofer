@@ -12,11 +12,15 @@ public class ReviewRepository {
     Map<Long, Review> reviewList = new HashMap<>();
 
     public ReviewRepository(){
-        Review ohioPie = new Review(1L,"Ohio Pie","Yummy","","");
-        Review dominoes = new Review(2L,"Dominoes", "Ick!","","");
+        Review ankle = new Review(1L,"ankle","Yummy","","/images/115286.png");
+        Review noShow = new Review(2L,"noShow", "Ick!","","/images/115318.png");
+        Review tube = new Review(3L,"tube", "Ick!","","/images/321889.png");
+        Review toe = new Review(4L,"toe", "Ick!","","/images/321929.png");
 
-        reviewList.put(ohioPie.getId(), ohioPie);
-        reviewList.put(dominoes.getId(), dominoes);
+        reviewList.put(ankle.getId(), ankle);
+        reviewList.put(noShow.getId(), noShow);
+        reviewList.put(tube.getId(), tube);
+        reviewList.put(toe.getId(), toe);
     }
 
     public ReviewRepository(Review...reviewsToAdd) {
@@ -32,4 +36,5 @@ public class ReviewRepository {
     public Collection<Review> findAll() {
         return reviewList.values();
     }
+
 }

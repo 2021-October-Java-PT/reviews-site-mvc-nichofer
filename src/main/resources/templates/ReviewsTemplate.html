@@ -2,38 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link rel="stylesheet" type="text/css" href="/styles/style.css"></link>
-    <title>A List of All Reviews</title>
+    <title>Reviews Site</title>
 </head>
 <body>
-<div class="container">
-    <nav>
-        <section>
-            <button>
-                <a th:href="@{/}">Home</a>
-            </button>
-        </section>
-    </nav>
-<main>
+<div class="reviewsContainer">
+<main class="reviews">
     <h1>A List of All Reviews</h1>
-    <table>
-        <tr>
-            <td>Name</td>
-            <td>Review</td>
-        </tr>
-        <tr th:each="review : ${reviewsModel}">
-            <td>
-                <a th:href="@{/reviews/{id}(id=${review.id})}"
-                   th:text="${review.name}"></a>
-            </td>
-            <td>
-                <a th:href="${review.review}">Review</a>
-            </td>
-        </tr>
-    </table>
+    <section class="reviewsList" th:each="review : ${reviewsModel}">
+        <ul>
+            <li>
+                <a class="btn" th:href="@{/reviews/{id}(id=${review.id})}" th:text="${review.name}"></a>
+            </li>
+        </ul>
+    </section>
 </main>
-    <footer>
-        <small>&copy 2021</small>
-    </footer>
+<nav>
+    <a class="btn" th:href="@{/}">Or go home!</a>
+</nav>
 </div>
+<footer>
+    <small>&copy NMH 2021</small>
+</footer>
 </body>
 </html>

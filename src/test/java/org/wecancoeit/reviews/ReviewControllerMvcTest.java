@@ -51,7 +51,7 @@ public class ReviewControllerMvcTest {
     public void shouldFindReviewOneInModel() throws Exception{
         Long reviewOneId = 1L;
         when(reviewRepo.findOne(reviewOneId)).thenReturn(reviewOne);
-        mockMvc.perform(get("/reviews?id=1"))
+        mockMvc.perform(get("/reviews?id=1L"))
                 .andExpect(model().attribute("reviewModel",reviewOne));
     }
 

@@ -22,12 +22,12 @@ public class ReviewController {
     @RequestMapping("/reviews")
     public String findAllReviews(Model model){
         model.addAttribute("reviewsModel", reviewRepo.findAll());
-        return "reviewsTemplate";
+        return "ReviewsTemplate";
     }
 
     @RequestMapping("/reviews/{id}")
     public String findOneReview(@PathVariable Long id, Model model){
         model.addAttribute("reviewModel", reviewRepo.findOne(id));
-        return "reviewTemplate";
+        return "ReviewTemplate";
     }
 }
