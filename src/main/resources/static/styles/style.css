@@ -20,11 +20,20 @@
 }
 
 .home .title{
+  font-family: Brush Script MT, Brush Script Std, cursive;
   position: absolute;
-  top: 25%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
+}
+
+.home p{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
 }
 
 .home img {
@@ -54,10 +63,6 @@
    margin: auto;
    max-width: 1000px;
    padding: 50px;
-   /* display: flex;
-   /* flex-direction: column;
-   justify-content: center;
-   align-items: center; */ */
 }
 
 h1{
@@ -93,6 +98,10 @@ h1{
 ul {
   list-style-type: none;
   padding-right: 4%;
+}
+
+.review .reviewDetail{
+  text-transform: none;
 }
 
 .review img{

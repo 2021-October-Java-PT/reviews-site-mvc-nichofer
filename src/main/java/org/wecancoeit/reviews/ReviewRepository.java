@@ -12,10 +12,10 @@ public class ReviewRepository {
     Map<Long, Review> reviewList = new HashMap<>();
 
     public ReviewRepository(){
-        Review ankle = new Review(1L,"ankle","Yummy","","/images/115286.png");
-        Review noShow = new Review(2L,"noShow", "Ick!","","/images/115318.png");
-        Review tube = new Review(3L,"tube", "Ick!","","/images/321889.png");
-        Review toe = new Review(4L,"toe", "Ick!","","/images/321929.png");
+        Review ankle = new Review(1L,"hanes","Classic socks. Durable and seem to stand up to a lot of wear and tear.","ankle","/images/115286.png");
+        Review noShow = new Review(2L,"bombas", "Wow! Love these socks.","no show","/images/115318.png");
+        Review tube = new Review(3L,"champion", "No seam. Nice!","ankle","/images/321889.png");
+        Review toe = new Review(4L,"dickies", "Very warm and dry quickly. Perfect for hiking!","tube","/images/321929.png");
 
         reviewList.put(ankle.getId(), ankle);
         reviewList.put(noShow.getId(), noShow);

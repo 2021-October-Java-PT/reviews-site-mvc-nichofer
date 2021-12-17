@@ -9,8 +9,8 @@
     <main class="review">
         <h1 th:text ="${reviewModel.name}"></h1>
         <img th:src="@{${reviewModel.imgUrl}}" alt="">
-        <p><strong>Category:</strong><span th:text="${reviewModel.reviewCategory}"></span></p>
-        <p th:href="${reviewModel.review}">Review</p>
+        <p><strong>Category: </strong><span th:text="${reviewModel.reviewCategory}"></span></p>
+        <p><strong>Review: </strong><span class="reviewDetail" th:text="${reviewModel.review}">Review</span></p>
     </main>
     <nav>
         <a class="btn" th:href="@{/reviews}">Go back</a>
